@@ -7,4 +7,4 @@ var longestCommonPrefix = function(strs, x=0) {
 	}
 };
 
-console.log(longestCommonPrefix(["flower","flow","flight"]));
+module.exports = longestCommonPrefix;
