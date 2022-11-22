@@ -7,4 +7,4 @@ var longestCommonPrefix = function(strs, x=0) {
 	}
 };
 
-module.exports = longestCommonPrefix;
+export default longestCommonPrefix;
