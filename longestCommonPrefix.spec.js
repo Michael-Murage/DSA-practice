@@ -1,11 +1,11 @@
-import longestCommonPrefix from './longestCommonPrefix.js';
+const longestCommonPrefix = require('./longestCommonPrefix')
+// const longestCommonPrefix = longestCommonPrefixJs.default
 
-// const longestCommonPrefixJs = import('./longestCommonPrefix.js');
-
-test('Returns the longest common prefix among an array of strings given as argument', () => {
-	expect(longestCommonPrefix(["flower","flow","flight"])).toBe("fl");
-})
-
-test('Verify that result is a string', () => {
-	expect(typeof longestCommonPrefix(["flower","flow","flight"])).toBe("string");
+describe('When given an array of strings', () => {
+	test('should return a non-empty string', () => {
+		expect(longestCommonPrefix(["flower","flow","flight"])).toBe("fl");
+	})
+	test('should verify that result is a string', () => {
+		expect(typeof longestCommonPrefix(["flower","flow","flight"])).toBe("string");
+	})
 })
