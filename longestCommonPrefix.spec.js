@@ -8,4 +8,13 @@ describe('When given an array of strings', () => {
 	test('should verify that result is a string', () => {
 		expect(typeof longestCommonPrefix(["flower","flow","flight"])).toBe("string");
 	})
+	test('should return correct result', () => {
+		expect(longestCommonPrefix(["car","racecar","model, rack, mode"])).toBe("");
+	})
+	test('should return correct result', () => {
+		expect(longestCommonPrefix()).toBe("");
+	})
+	test('should return correct result', () => {
+		expect(longestCommonPrefix(['a'])).toBe("a");
+	})
 })
