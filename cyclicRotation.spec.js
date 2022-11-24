@@ -16,3 +16,6 @@ test('Third', () => {
 test('Fourth', () => {
 	expect(solution( [3, 8, 9, 7, 6], 1)) === ([6, 3, 8, 9, 7])
 })
+test('Empty', () => {
+	expect(solution( [], 3)) === ([])
+})

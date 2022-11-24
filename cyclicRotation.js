@@ -61,5 +61,5 @@ function solution(A, K){
 	return A;
 };
 
-console.log(solution([], 3));
-// module.exports = solution;
+// console.log(solution([], 3));
+module.exports = solution;
