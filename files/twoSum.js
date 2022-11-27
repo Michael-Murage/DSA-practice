@@ -55,11 +55,13 @@ than O(n2) time complexity?
 var twoSum = function(nums, target) {
 
 	for(let i=0; i<nums.length; i++){
-		if(nums.indexOf(target - nums[i]) !== -1 && nums.indexOf(target - nums[i]) !== i){
-			return [nums.indexOf(nums[i]), nums.indexOf(target-nums[i])]
+		let x = nums.indexOf(target - nums[i])
+		if(x === -1 || x === i){
+			continue
 		}
+		return [i, x]
 	}
 	return 'none'
 }
-
+// console.log(twoSum([3,3], 6))
 module.exports = twoSum;
