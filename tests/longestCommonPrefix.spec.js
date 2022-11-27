@@ -1,4 +1,4 @@
-const longestCommonPrefix = require('./longestCommonPrefix')
+const longestCommonPrefix = require('../files/longestCommonPrefix')
 // const longestCommonPrefix = longestCommonPrefixJs.default
 
 describe('When given an array of strings', () => {
